@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Training Needs</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>Figuring Out Your Digital Training Needs</h1>
+        <p>Fill out this form to get a training plan with recommended resources.</p>
+    </header>
+    
+    <main>
+        <form id="training-needs-form" action="" method="POST">
+            <label for="job">Your Role:</label>
+            <select name="job" id="job" required>
+                <option value="product-owner">Product Owner</option>
+                <option value="mission-owner">Mission Owner</option>
+                <option value="chief-executive">Chief Executive</option>
+                <option value="approving-officer">Approving Officer</option>
+            </select>
+
+            <label>Core Tech Domains and Skill Levels:</label>
+            
+            <!-- Core Tech Domain: Product Development -->
+            <label for="product-development">Product Development:</label>
+            <select name="product-development" id="product-development" required>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <!-- Core Tech Domain: Cybersecurity -->
+            <label for="cybersecurity">Cybersecurity:</label>
+            <select name="cybersecurity" id="cybersecurity" required>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <!-- Core Tech Domain: Data Analytics -->
+            <label for="data-analytics">Data Analytics:</label>
+            <select name="data-analytics" id="data-analytics" required>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <!-- Core Tech Domain: Artificial Intelligence -->
+            <label for="artificial-intelligence">Artificial Intelligence:</label>
+            <select name="artificial-intelligence" id="artificial-intelligence" required>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <label for="time-per-week">Time Available per Week (in hours):</label>
+            <input type="number" name="time-per-week" id="time-per-week" min="1" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="recommendations-container"></div>
+        <div id="weekly-plan-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Digital Training Needs</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
